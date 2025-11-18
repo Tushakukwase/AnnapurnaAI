@@ -1,0 +1,16 @@
+{
+  "name": "annapurnai-food-recommender",
+  "version": "1.0.0",
+  "description": "Ancient Indian Food Recommender with Ayurvedic wisdom",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
